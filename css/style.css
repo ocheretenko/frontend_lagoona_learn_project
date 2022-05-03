@@ -1,0 +1,727 @@
+@font-face {
+    font-family: MullerRegular;
+    src: url("/fonts/MullerRegular.woff2");
+}
+
+@font-face {
+    font-family: MullerMedium;
+    src: url("/fonts/MullerMedium.woff2");
+}
+
+@font-face {
+    font-family: MullerBold;
+    src: url("/fonts/MullerBold.woff2");
+}
+
+.content-font-style{
+    color: #000000;
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+*{
+    font-family: MullerRegular;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+body{
+    background: #E5E5E5;
+
+    font-family: "Muller";
+}
+
+.section-placing-star-empty
+{
+    fill:#E6E6E6;
+}
+
+.container{
+    width: 1170px;
+    margin: 0px auto;
+}
+
+.btn{
+    padding: 13px 20px;
+
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+
+    color: #CC9933 !important;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #CC9933;
+    color: white !important;
+}
+.btn:active{
+    background-color: #A47312;
+    color: white !important;
+}
+
+/* header */
+.header .container{
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-right{
+    margin-left: auto;
+}
+
+.header-tel-link{
+    margin-left: 40px;
+    padding: 2px;
+
+    border: 1px solid transparent;
+
+    color: #666666;
+    text-decoration: none;
+
+
+    font-family: MullerMedium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header-tel-link:hover{
+    color: #CC9933;
+    border: 1px solid transparent;
+}
+
+.header-tel-link:focus{
+    color:#CC9933;
+    border: 1px solid #CC9933;
+}
+
+.header-tel-link:active{
+    color: #A47312;
+    border: 1px solid transparent;
+}
+
+.header-login-icon{
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 21px;
+    height: 13px;
+    margin-right: 5px;
+    
+    background-image: url("/img/header_login_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-login-link-text{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-login-link{
+    padding: 9px 5px;
+    color:#CC9933;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+
+    border: 1px solid transparent;
+}
+
+
+.header-login-link:hover{
+    /* color:#E9C479; */
+    filter: brightness(0) saturate(100%) invert(100%) sepia(24%) saturate(6077%) hue-rotate(312deg) brightness(104%) contrast(81%);
+    border: 1px solid transparent;
+}
+
+.header-login-link:focus{
+    border: 1px solid #CC9933;
+    /* color: #CC9933; */
+    filter: brightness(0) saturate(100%) invert(62%) sepia(16%) saturate(1887%) hue-rotate(1deg) brightness(100%) contrast(76%);
+}
+
+.header-login-link:active{
+    border: 1px solid transparent;
+    /* color:#A47312; */
+    filter: brightness(0) saturate(100%) invert(52%) sepia(84%) saturate(4712%) hue-rotate(29deg) brightness(94%) contrast(86%);
+}
+
+/* main-nav */
+.main-nav{
+    display: flex;
+    justify-content: center;
+    padding: 0px 45px;
+    margin-bottom: 70px;
+
+    border-radius: 15px;
+    background: #FFFFFF;
+}
+.main-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav-item{
+    text-align: center;
+    
+    padding: 27px 0px; 
+}
+
+.main-nav-list a {
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    text-align: center;
+
+    text-decoration: none;
+    color: #666666;
+
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.main-nav-list a:hover, .main-nav-list a:focus{
+    color: #CC9933;
+    
+}
+/* .main-nav-list a:focus{
+    outline:  1px solid #CC9933;
+} */
+
+.main-nav-list a:active{
+    color: #A47312;
+}
+
+.main-nav-list a:not(:last-child){
+    margin-right: 45px;
+}
+
+
+.main-nav-buttons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-left: 1px #E1E1E1 solid;
+    padding-left: 57px;
+    margin-left: 56px;
+}
+
+.main-nav-button:not(:last-child){
+    margin-right: 40px;
+}
+
+
+/* section common rules */
+.section-heading{
+    padding-left: 40px;
+    margin-top: 0px;
+
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* section-hero */
+.section-hero{
+    margin-bottom: 70px;
+}
+
+.section-hero .section-heading{
+    margin-bottom: 20px;
+}
+
+.section-hero-list{
+    display: flex;
+    justify-content: center;
+}
+
+.section-hero-list-left-block, .section-hero-list-right-block{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-hero-list-left-block{
+    margin-right: 23px;
+}
+
+.section-hero-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    flex: 1 1 258px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+
+.section-hero-item:not(:last-child){
+    margin-bottom: 23px;
+}
+
+.hero-img-1{
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("/img/hero1.png");
+}
+
+.hero-img-2{
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("/img/hero2.png");
+}
+
+.hero-img-3{
+    background-image: url("/img/hero3.png");
+}
+
+.section-hero-list-right-block .section-hero-item-heading{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-hero-list-right-block .section-hero-item-price{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-hero-item-heading{
+    max-width: 60%;
+    
+    color: white;
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-hero-link-container{
+    margin-top: 47px;
+}
+
+.section-hero-item-link{
+    display: inline-block;
+    vertical-align: middle;
+
+    color: #FFCC66;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    text-decoration: none;
+}
+
+.section-hero-item-link:active{
+    color:#FFFFFF;
+}
+
+.section-hero-item-price{
+    margin-top: 15px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-hero-link-icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 18px;
+
+    background-image: url("/img/section_hero_item_link.svg");
+    background-repeat: no-repeat;
+}
+
+/* sectuin about us */
+
+.section-about-us{
+    max-width: 75%;
+    margin-bottom: 70px;
+}
+
+.section-about-us-heading{
+    margin: 0px 0px 11px 0px;
+}
+
+.section-about-us-text{
+    margin: 0px;
+}
+
+/* sectuin services */
+.section-services{
+    margin-bottom: 47px;
+}
+
+.section-services-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-services-heading{
+    margin-bottom: 20px;
+}
+
+.section-services-item-link-icon{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 18px;
+
+    background-image: url("/img/services/link.svg");
+    background-repeat: no-repeat;
+}
+
+.section-services-item{
+    flex: 0 0 573px;
+    margin-bottom: 23px;
+    padding: 190px 45px 45px 45px;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+
+.section-services-item-heading{
+    color: #CC9933;
+
+    text-decoration: none;
+    font-family: MullerMedium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.section-services-item-heading:hover{
+    filter: brightness(0) saturate(100%) invert(82%) sepia(31%) saturate(588%) hue-rotate(348deg) brightness(95%) contrast(92%);
+}
+
+.section-services-item-heading:active{
+    filter: brightness(0) saturate(100%) invert(44%) sepia(29%) saturate(1645%) hue-rotate(7deg) brightness(95%) contrast(86%);
+}
+
+.section-services-content{
+    margin: 0px;
+}
+
+.services-item-img1{
+    background-image: url("/img/services/1.png");
+}
+
+.services-item-img2{
+    background-image: url("/img/services/2.png");
+}
+
+.services-item-img3{
+    background-image: url("/img/services/3.png");
+}
+
+.services-item-img4{
+    background-image: url("/img/services/4.png");
+}
+
+/* section benefits */
+.section-benefits{
+    /* 70-23 */
+    margin-bottom: 47px;
+}
+
+.section-benefits-heading{
+    margin-bottom: 30px;
+}
+
+.section-benefits-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.section-benefits-item{
+    flex: 0 0 275px;
+    margin-bottom: 23px;
+    min-height: 275px;
+    box-sizing: border-box;
+
+    padding: 40px 40px 10px 45px;
+    margin-right: 23px;
+
+    background-color: white;
+    border-radius: 15px;
+}
+
+.section-benefits-item:nth-child(4n) {
+    margin-right: 0px !important;
+  }
+
+.section-benefits-item-icon
+{
+    width: 67px;
+    height: 67px;
+    background-repeat: no-repeat;
+}
+
+.section-benefits-item-text{
+    margin: 10px 0px 0px 0px;
+}
+
+.section-benefits-item-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.benefits-icon-bathtub
+{
+    background-image: url("/img/benefit-icons/bathtub.svg");
+}
+
+.benefits-icon-hanger
+{
+    background-image: url("/img/benefit-icons/hanger.svg");
+}
+
+.benefits-icon-heating
+{
+    background-image: url("/img/benefit-icons/heating.svg");
+}
+
+.benefits-icon-hotel-key
+{
+    background-image: url("/img/benefit-icons/hotel-key.svg");
+}
+
+.benefits-icon-parking
+{
+    background-image: url("/img/benefit-icons/parking.svg");
+}
+.benefits-icon-reception
+{
+    background-image: url("/img/benefit-icons/reception.svg");
+}
+
+.benefits-icon-security-box
+{
+    background-image: url("/img/benefit-icons/security-box.svg");
+}
+
+.benefits-icon-swimming-pool
+{
+    background-image: url("/img/benefit-icons/swimming-pool.svg");
+}
+
+/* placing section */
+.section-placing{
+    margin-bottom: 47px;
+}
+
+.section-placing-heading{
+    margin-bottom: 30px;
+}
+
+.section-placing-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.section-placing-item{
+    box-sizing: border-box;
+    flex: 0 0 374px;
+    max-width: 374px;
+    min-height: 440px;;
+    margin-bottom: 23px;
+    margin-right: 23px;
+
+    padding: 250px 45px 10px 45px;
+    position: relative; 
+
+    background-color: white;
+    border-radius: 15px;
+}
+
+.section-placing-item:nth-child(3n){
+    margin-right: 0px;
+}
+
+
+.section-placing-item-image{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+} 
+
+.section-placing-stars-container{
+    display: inline-block;
+    right: 45px;
+    position: absolute;
+}
+
+.section-placing-price{
+    color: black;
+
+    font-family: MullerBold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-placing-price-from{
+    color: #999999;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-placing-duration{
+    color: #000000;
+
+    height: 16px;
+    width: 47px;
+    left: 99px;
+    top: 4px;
+    border-radius: nullpx;
+
+}
+
+.price-and-stars-container{
+    margin-bottom: 16px;
+}
+
+.section-placing-placename{
+    margin-bottom: 16px;
+
+    color: black;
+
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.section-placing-placelocation{
+    margin-bottom: 20px;
+    
+    color: #999999;
+
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-placing-button{
+    display: inline-block;
+}
+
+.section-placing-item-last{
+    box-sizing: border-box;
+    flex: 0 0 374px;
+    max-width: 374px;
+    min-height: 440px;;
+    margin-bottom: 23px;
+
+    padding: 373px 0px 0px 54px;
+
+    border-radius: 15px;
+    background-color: white;
+
+    background-image: url("/img/placing/placing_more.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.section-placing-item-last-content{
+    display: inline-block;
+    vertical-align: middle;
+
+    color: white;
+
+    font-family: MullerMedium;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.section-placing-item-last-link-icon{
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-left: 2px;
+
+    width: 10px;
+    height: 18px;
+
+    background-image: url("/img/placing/link.svg");
+    background-repeat: no-repeat;
+}
