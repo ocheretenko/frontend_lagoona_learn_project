@@ -34,7 +34,7 @@ ul{
 }
 
 body{
-    background: #E5E5E5;
+    background: #F1F1F1;
 
     font-family: "Muller";
 }
@@ -56,6 +56,7 @@ body{
     border-radius: 10px;
 
     color: #CC9933 !important;
+    background-color: white;
     font-family: Muller;
     font-size: 16px;
     font-weight: 400;
@@ -494,9 +495,9 @@ body{
 
 .section-benefits-item{
     flex: 0 0 275px;
-    margin-bottom: 23px;
     min-height: 275px;
     box-sizing: border-box;
+    margin-bottom: 23px;
 
     padding: 40px 40px 10px 45px;
     margin-right: 23px;
@@ -508,6 +509,7 @@ body{
 .section-benefits-item:nth-child(4n) {
     margin-right: 0px !important;
   }
+
 
 .section-benefits-item-icon
 {
@@ -724,4 +726,315 @@ body{
 
     background-image: url("/img/placing/link.svg");
     background-repeat: no-repeat;
+}
+
+/* Section Tour */
+.section-tour{
+    margin-bottom: 70px;
+}
+
+.tour-container {
+    padding: 35px 45px 70px 45px;
+    box-sizing: border-box;
+    background-color: #E9E9E9;
+    border-radius: 15px;
+}
+.tour-heading{
+    padding-left: 0px;
+}
+
+.tour-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+
+    border-radius: 15px;
+    background-color: white;
+}
+
+.tour-form-item{
+    flex: 1 1 10%;
+}
+
+.tour-form-item:not(:last-child){
+    padding: 0px 20px 0px 0px;
+    border-right: 1px solid #E1E1E1;
+    margin-right: 20px;
+}
+
+.tour-form-input-heading{
+    font-family: 'MullerRegular';
+    /* font-weight: 400; */
+    margin-top: 3px;
+    margin-bottom: 15px;
+
+    color: black;
+    font-family: MullerRegular;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.input-white-border{
+    border: 1px solid white;
+}
+
+.tour-select{
+    /* min-width: 169px; */
+}
+
+.tour-input-number{
+    min-width: 120px;
+
+    border: 1px solid white;
+    border-bottom: 1px solid #CCC;
+}
+
+.tour-form-button{
+    padding: 13px 30px;
+    /* margin-left: 30px; */
+}
+
+.tour-input-font{
+    color: black;
+    font-size: 16px;
+    font-family: MullerRegular;
+    line-height: 1;
+}
+
+
+/* section contacts */
+.section-contacts{
+    margin-bottom: 19px;
+}
+
+.section-contacts-subcontainer{
+    background-color: white;
+    padding: 44px 44px 46px 46px;
+    border-radius: 15px;
+}
+
+.section-contacts-subcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-contacts-left{
+    flex: 1 1 40%;
+}
+
+.section-contacts-right{
+    flex: 1 1 40%;
+}
+
+.section-contacts-list{
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-contacts-item:not(:last-child){
+    display: flex;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    border-bottom: 1px solid #C4C4C4;;
+}
+
+.section-contacts-item:last-child{
+    flex: 1 0 10%;
+    position: relative;
+}
+
+.contact-heading{
+    display: inline-block;
+    min-width: 145px;
+
+    font-family: MullerBold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.contact-details{
+    display: inline-block;
+    
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.section-contacts-btn{
+    display: inline-block;
+    padding: 27px 29px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    font-family: MullerBold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.section-contacts-link{
+    display: inline-block;
+
+    line-height: 24px;
+    color: #CC9933;
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.section-contacts-link:hover{
+    color: #E9C379;
+}
+
+.section-contacts-link:focus{
+    color: #CC9933;
+
+    border: 1px solid #CC9933;
+}
+
+.section-contacts-link:active{
+    color: #A47312;
+}
+
+/* footer */
+.footer-container{
+    padding: 44px 52px;
+    display: flex;
+
+    box-sizing: border-box;
+
+    background-color: #333333;
+    border-radius: 15px;
+    background-image: url("/img/footer-logo.svg");
+    background-repeat: no-repeat;
+    background-position-x: 737px;
+    background-position-y: bottom;
+    background-size: 254px auto;
+    margin-bottom: 20px;
+}
+
+.footer-subcontainer-left{
+    width: 320px;
+    margin-right: 100px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subcontainer-center{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subcontainer-right{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+}
+
+.footer-subcontainer-spacer{
+    height: 15px;
+}
+
+.footer-copyright{
+    color: white;
+    margin: 0px;
+
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.footer-user-agreement-link{
+    margin-top: 50px;
+
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-address{
+    color: white;
+
+    font-family: MullerRegular;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+
+    font-style: normal;
+}
+
+.footer-user-agreement-link{
+    margin-right: auto;
+}
+
+.footer-address-link{
+
+    margin-right: auto;
+    font-style: normal;
+}
+
+.social-link{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+    
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+}
+
+.social-link:first-child{
+    margin-top: 7px;
+}
+
+.social-link:hover, .social-link:focus{
+    filter: brightness(0) saturate(100%) invert(92%) sepia(16%) saturate(6187%) hue-rotate(335deg) brightness(86%) contrast(83%);
+}
+
+.social-link:active{
+    filter: brightness(0) saturate(100%) invert(40%) sepia(93%) saturate(429%) hue-rotate(2deg) brightness(97%) contrast(91%);
+}
+
+.social-vk{
+    background-image: url("/img/social/vk.svg");
+}
+
+.social-twitter{
+    background-image: url("/img/social/twitter.svg");
+}
+
+.social-owl{
+    background-image: url("/img/social/owl.svg");
+}
+
+.social-facebook{
+    background-image: url("/img/social/facebook.svg");
+}
+
+.social-instagram{
+    background-image: url("/img/social/instagram.svg");
 }

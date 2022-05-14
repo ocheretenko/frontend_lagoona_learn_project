@@ -331,6 +331,112 @@
                     </ul>
             </section>
         </div>
+        <section class="section-tour">
+            <div class="container tour-container">
+                <h2 class="section-heading tour-heading">Хочу тур</h2>
+                <form class="tour-form" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+                    <div class="tour-form-item">
+                        <div class="tour-form-input-heading">Город вылета</div>
+                        <select required name="city" class="tour-input-font tour-select input-white-border">  
+                            <option value="01">Санкт-Петербург</option>
+                            <option value="02">Москва</option>
+                            <option value="03">Уфа</option>
+                            <option value="04">Ростов-на-Дону</option>
+                        </select>
+                    </div>
+                    <div class="tour-form-item">
+                        <div class="tour-form-input-heading">Страна</div>
+                        <select name="country" required class="tour-input-font tour-select input-white-border">  
+                            <option value="01">Австралия</option>
+                            <option value="02">Турция</option>
+                        </select>
+                    </div>
+                    <div class="tour-form-item">
+                        <div class="tour-form-input-heading">Дата прибытия</div>
+                        <input name="date" required class="tour-input-font input-white-border" type="date" value="2021-02-18">
+                    </div>
+                    <div class="tour-form-item">
+                        <div class="tour-form-input-heading">Ночей</div>
+                        <input name="nights" required min="1" max="90" class="tour-input-font tour-input-number" type="number" value="6">
+                    </div>
+                    <div class="tour-form-item">
+                        <div class="tour-form-input-heading">Туристы</div>
+                        <input name="tourists" required min="1" max="10" class="tour-input-font tour-input-number" type="number" value="2">
+                    </div>
+                    <button type="submit" class="btn tour-form-button">Найти</button>
+                </form>
+            </div>
+        </section>
+        <section class="section-contacts">
+            <div class="container">
+                <h2 class="section-heading">Контакты</h2>
+                <div class="section-contacts-subcontainer">
+                    <div class="section-contacts-left">
+                        <ul class="section-contacts-list">
+                            <li class="section-contacts-item">
+                                <strong class="contact-heading">Адрес</strong>
+                                <div class="contact-details">Москва, улица Юности, дом 5 строение 4, офис 2</div>
+                            </li>
+                            <li class="section-contacts-item">
+                                <strong class="contact-heading">Телефоны</strong>
+                                <div class="contact-details">
+                                    <a href="tel:+74995356434" class="section-contacts-link">+7 (499) 535-64-34</a>
+                                    <a href="tel:+74950050544" class="section-contacts-link">+7 (495) 005-05-44</a>
+                                </div>
+                            </li>
+                            <li class="section-contacts-item">
+                                <strong class="contact-heading">Email</strong>
+                                <div class="contact-details">
+                                    <a href="mailto:lg.oona@mail.ru" class="section-contacts-link">lg.oona@mail.ru</a>
+                                    <div class="contact-details">по вопросам бронирования</div>
+                                    <a href="mailto:hotels.ln@mail.ru" class="section-contacts-link">hotels.ln@mail.ru</a>
+                                    <div class="contact-details">по вопросам сотрудничества</div>
+                                </div>
+                            </li>
+                            <li class="section-contacts-item">
+                                <strong class="contact-heading">График</strong>
+                                <div class="contact-details">Понедельник - пятница, с 10:00 до 19:00</div>
+                            </li>
+                            <li class="section-contacts-item">    
+                                <a class="btn section-contacts-btn" href="">Построить маршрут</a>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="section-contacts-right">
+                        <img src="/img/section-contacts-image.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container footer-container">
+                <div class="footer-subcontainer-left">
+                    <p class="footer-copyright">© 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+                        <br><br>
+                        Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+                        <a class="section-contacts-link footer-user-agreement-link" href="/">Пользовательское соглашение</a>
+                </div>
+                <address>
+                    <div class="footer-subcontainer-center">
+                        <div class="footer-address">11710, улица Юности, дом 5 строение 4, офис 2</div>
+                        <div class="footer-subcontainer-spacer"></div>
+                        <a class="section-contacts-link footer-address-link" href="tel:+74995356434">+7 (499) 535-64-34</a>
+                        <a class="section-contacts-link footer-address-link" href="tel:+74950050544">+7 (495) 005-05-44</a>
+                        <div class="footer-subcontainer-spacer"></div>
+                        <a class="section-contacts-link footer-address-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                        <a class="section-contacts-link footer-address-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                    </div>
+                </address>
+                <div class="footer-subcontainer-right">
+                    <a href="/" class="social-link social-owl"></a>
+                    <a href="/" class="social-link social-twitter"></a>
+                    <a href="/" class="social-link social-facebook"></a>
+                    <a href="/" class="social-link social-vk"></a>
+                    <a href="/" class="social-link social-instagram"></a>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
