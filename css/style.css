@@ -394,7 +394,7 @@ body {
     text-decoration: none;
 }
 
-.section-hero__item-link:active {
+.section-hero__link:active {
     color: #FFFFFF;
 }
 
