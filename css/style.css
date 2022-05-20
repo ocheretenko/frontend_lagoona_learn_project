@@ -735,7 +735,8 @@ body {
     flex: 0 0 374px;
     max-width: 374px;
     min-height: 440px;
-    ;
+    position: relative;
+    
     margin-bottom: 23px;
 
     padding: 373px 0px 0px 54px;
@@ -748,10 +749,24 @@ body {
     background-position: cover;
 }
 
+.section-placing__item-last-content::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    content: '';
+    border-radius: 15px;
+}
+
 .section-placing__item-last-content {
     display: inline-block;
     vertical-align: middle;
 
+    transition: text-decoration-color .3s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
     color: white;
 
     font-family: Muller;
@@ -760,6 +775,10 @@ body {
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.section-placing__item-last-content:hover {
+    text-decoration-color: white;
 }
 
 .section-placing__item-last-link-icon {
