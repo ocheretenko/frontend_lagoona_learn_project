@@ -402,8 +402,22 @@ body {
     text-decoration: none;
 }
 
+.section-hero__link:focus path,
+.section-hero__link:hover path {
+    stroke: #CC9933;;
+}
+
+.section-hero__link:focus,
+.section-hero__link:hover {
+    color: #CC9933;
+}
+
 .section-hero__link:active {
     color: #FFFFFF;
+}
+
+.section-hero__link:active path {
+    stroke: #FFFFFF;
 }
 
 .section-hero__item-price {
