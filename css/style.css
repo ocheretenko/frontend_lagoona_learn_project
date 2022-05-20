@@ -235,6 +235,7 @@ body {
 .main-nav__item {
     text-align: center;
 
+    transition: color .3s ease;
     padding: 27px 0px;
 }
 
