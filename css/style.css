@@ -2,27 +2,29 @@
     font-family: Muller;
     font-weight: 400;
     src: url("/fonts/MullerRegular.woff2") format("woff2"),
-    url("/fonts/MullerRegular.woff") format("woff");
+        url("/fonts/MullerRegular.woff") format("woff");
 }
 
 @font-face {
     font-family: Muller;
     font-weight: 500;
     src: url("/fonts/MullerMedium.woff2") format("woff2"),
-    url("/fonts/MullerMedium.woff") format("woff");
+        url("/fonts/MullerMedium.woff") format("woff");
 }
 
 @font-face {
     font-family: Muller;
     font-weight: 700;
     src: url("/fonts/MullerBold.woff2") format("woff2"),
-    url("/fonts/MullerBold.woff") format("woff");
+        url("/fonts/MullerBold.woff") format("woff");
 }
 
 /* common */
 
 .link_type_1 {
     display: inline-block;
+
+    transition: color .3s ease;
 
     line-height: 24px;
     color: #CC9933;
@@ -87,6 +89,10 @@ body {
 
     border: 1px solid #CC9933;
     border-radius: 10px;
+
+    transition-property: color, background-color;
+    transition-timing-function: ease;
+    transition-duration: .5s;
 
     color: #CC9933 !important;
     background-color: white;
@@ -179,6 +185,7 @@ body {
     margin-left: 40px;
     padding: 2px;
 
+    transition: color .3s ease;
     border: 1px solid transparent;
 
     color: #666666;
@@ -228,6 +235,7 @@ body {
 .main-nav__item {
     text-align: center;
 
+    transition: color .3s ease;
     padding: 27px 0px;
 }
 
@@ -379,10 +387,22 @@ body {
     margin-top: 47px;
 }
 
+.section-hero__link::before {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+    border-radius: 15px;
+    content: '';
+}
+
 .section-hero__link {
     display: inline-block;
     vertical-align: middle;
-
+    
+    transition: color .3s ease;
     color: #FFCC66;
 
     font-size: 16px;
@@ -394,8 +414,26 @@ body {
     text-decoration: none;
 }
 
+.section-hero__link path {
+    transition: stroke .3s ease;
+}
+
+.section-hero__link:focus path,
+.section-hero__link:hover path {
+    stroke: #CC9933;;
+}
+
+.section-hero__link:focus,
+.section-hero__link:hover {
+    color: #CC9933;
+}
+
 .section-hero__link:active {
     color: #FFFFFF;
+}
+
+.section-hero__link:active path {
+    stroke: #FFFFFF;
 }
 
 .section-hero__item-price {
@@ -459,6 +497,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.section-services__link-icon path {
+    transition: stroke .3s ease;
+}
+
 .section-services__item {
     flex: 0 0 573px;
     margin-bottom: 23px;
@@ -475,6 +517,8 @@ body {
 .section-services__item-heading {
     color: #CC9933;
 
+    transition: color .3s ease;
+
     text-decoration: none;
     font-family: Muller;
     font-size: 20px;
@@ -484,12 +528,16 @@ body {
     text-align: left;
 }
 
-.section-services__item-heading:hover {
-    filter: brightness(0) saturate(100%) invert(82%) sepia(31%) saturate(588%) hue-rotate(348deg) brightness(95%) contrast(92%);
+.section-services__item-heading:hover,
+.section-services__item-heading:hover .section-services__link-icon path {
+    color: #E9C479;
+    stroke: #E9C479;
 }
 
-.section-services__item-heading:active {
-    filter: brightness(0) saturate(100%) invert(44%) sepia(29%) saturate(1645%) hue-rotate(7deg) brightness(95%) contrast(86%);
+.section-services__item-heading:active,
+.section-services__item-heading:active .section-services__link-icon path {
+    color: #A47312;
+    stroke: #A47312;
 }
 
 .section-services__content {
@@ -677,7 +725,7 @@ body {
 
 }
 
-.price-and-stars-container {
+.section-placing__price-container {
     margin-bottom: 16px;
 }
 
@@ -717,7 +765,8 @@ body {
     flex: 0 0 374px;
     max-width: 374px;
     min-height: 440px;
-    ;
+    position: relative;
+    
     margin-bottom: 23px;
 
     padding: 373px 0px 0px 54px;
@@ -730,10 +779,24 @@ body {
     background-position: cover;
 }
 
+.section-placing__item-last-content::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    content: '';
+    border-radius: 15px;
+}
+
 .section-placing__item-last-content {
     display: inline-block;
     vertical-align: middle;
 
+    transition: text-decoration-color .3s ease;
+    text-decoration: underline;
+    text-decoration-color: transparent;
     color: white;
 
     font-family: Muller;
@@ -742,6 +805,10 @@ body {
     line-height: 40px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+.section-placing__item-last-content:hover {
+    text-decoration-color: white;
 }
 
 .section-placing__item-last-link-icon {
