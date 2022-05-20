@@ -498,7 +498,7 @@ body {
 }
 
 .section-services__item-heading:hover,
-.section-services__item-heading:hover .section-services__link-icon path{
+.section-services__item-heading:hover .section-services__link-icon path {
     color: #E9C479;
     stroke: #E9C479;
 }
@@ -694,7 +694,7 @@ body {
 
 }
 
-.price-and-stars-container {
+.section-placing__price-container {
     margin-bottom: 16px;
 }
 
