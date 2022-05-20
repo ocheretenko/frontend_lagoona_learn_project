@@ -2,27 +2,29 @@
     font-family: Muller;
     font-weight: 400;
     src: url("/fonts/MullerRegular.woff2") format("woff2"),
-    url("/fonts/MullerRegular.woff") format("woff");
+        url("/fonts/MullerRegular.woff") format("woff");
 }
 
 @font-face {
     font-family: Muller;
     font-weight: 500;
     src: url("/fonts/MullerMedium.woff2") format("woff2"),
-    url("/fonts/MullerMedium.woff") format("woff");
+        url("/fonts/MullerMedium.woff") format("woff");
 }
 
 @font-face {
     font-family: Muller;
     font-weight: 700;
     src: url("/fonts/MullerBold.woff2") format("woff2"),
-    url("/fonts/MullerBold.woff") format("woff");
+        url("/fonts/MullerBold.woff") format("woff");
 }
 
 /* common */
 
 .link_type_1 {
     display: inline-block;
+
+    transition: color .3s ease;
 
     line-height: 24px;
     color: #CC9933;
@@ -87,6 +89,10 @@ body {
 
     border: 1px solid #CC9933;
     border-radius: 10px;
+
+    transition-property: color, background-color;
+    transition-timing-function: ease;
+    transition-duration: .5s;
 
     color: #CC9933 !important;
     background-color: white;
@@ -179,6 +185,7 @@ body {
     margin-left: 40px;
     padding: 2px;
 
+    transition: color .3s ease;
     border: 1px solid transparent;
 
     color: #666666;
@@ -459,6 +466,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.section-services__link-icon path {
+    transition: stroke .3s ease;
+}
+
 .section-services__item {
     flex: 0 0 573px;
     margin-bottom: 23px;
@@ -475,6 +486,8 @@ body {
 .section-services__item-heading {
     color: #CC9933;
 
+    transition: color .3s ease;
+
     text-decoration: none;
     font-family: Muller;
     font-size: 20px;
@@ -484,12 +497,16 @@ body {
     text-align: left;
 }
 
-.section-services__item-heading:hover {
-    filter: brightness(0) saturate(100%) invert(82%) sepia(31%) saturate(588%) hue-rotate(348deg) brightness(95%) contrast(92%);
+.section-services__item-heading:hover,
+.section-services__item-heading:hover .section-services__link-icon path{
+    color: #E9C479;
+    stroke: #E9C479;
 }
 
-.section-services__item-heading:active {
-    filter: brightness(0) saturate(100%) invert(44%) sepia(29%) saturate(1645%) hue-rotate(7deg) brightness(95%) contrast(86%);
+.section-services__item-heading:active,
+.section-services__item-heading:active .section-services__link-icon path {
+    color: #A47312;
+    stroke: #A47312;
 }
 
 .section-services__content {
