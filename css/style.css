@@ -80,7 +80,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     /* margin: 0px auto; */
 }
 
@@ -821,7 +821,7 @@ body {
 }
 
 .section-tour__container {
-    padding: 35px 45px 70px 45px;
+    /* padding: 35px 45px 70px 45px; */
     box-sizing: border-box;
     background-color: #E9E9E9;
     border-radius: 15px;
@@ -1141,6 +1141,11 @@ body {
 
     .footer__subcontainer-left {
         width: unset;
+    }
+
+    .section-contacts__item {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
