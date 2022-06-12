@@ -917,20 +917,20 @@ body {
 }
 
 .section-contacts__list {
-    height: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.section-contacts__item:not(:last-child) {
+.section-contacts__item {
     display: flex;
     padding-bottom: 23px;
-    margin-bottom: 25px;
-    margin-right: 50px;
+    margin-right: 38px;
     border-bottom: 1px solid #C4C4C4;
-    ;
+}
+
+.section-contacts__item:not(:last-of-type) {
+    margin-bottom: 25px;
 }
 
 .section-contacts__item:last-child {
@@ -963,12 +963,13 @@ body {
 
 }
 
+.section-contants__btn-container {
+    margin-top: 45px;
+}
+
 .section-contacts__btn {
     display: inline-block;
     padding: 27px 29px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
 
     font-family: Muller;
     font-size: 16px;
