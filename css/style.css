@@ -82,6 +82,7 @@ body {
 .container {
     /* max-width: 1170px; */
     /* margin: 0px auto; */
+    box-sizing: border-box;
 }
 
 .btn {
@@ -220,7 +221,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    /* padding: 0px 21px; */
+    box-sizing: border-box;
     margin-bottom: 70px;
 
     border-radius: 15px;
@@ -1163,6 +1164,10 @@ body {
         flex-direction: column;
     }
 
+    .section-heading {
+        padding-left: 10px;
+        font-size: 30px;
+    }
     .header__right {
         margin-left: 0;
     }
