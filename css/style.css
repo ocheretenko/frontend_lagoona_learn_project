@@ -1,22 +1,22 @@
 @font-face {
     font-family: Muller;
     font-weight: 400;
-    src: url("/fonts/MullerRegular.woff2") format("woff2"),
-        url("/fonts/MullerRegular.woff") format("woff");
+    src: url("fonts/MullerRegular.woff2") format("woff2"),
+        url("fonts/MullerRegular.woff") format("woff");
 }
 
 @font-face {
     font-family: Muller;
     font-weight: 500;
-    src: url("/fonts/MullerMedium.woff2") format("woff2"),
-        url("/fonts/MullerMedium.woff") format("woff");
+    src: url("fonts/MullerMedium.woff2") format("woff2"),
+        url("fonts/MullerMedium.woff") format("woff");
 }
 
 @font-face {
     font-family: Muller;
     font-weight: 700;
-    src: url("/fonts/MullerBold.woff2") format("woff2"),
-        url("/fonts/MullerBold.woff") format("woff");
+    src: url("fonts/MullerBold.woff2") format("woff2"),
+        url("fonts/MullerBold.woff") format("woff");
 }
 
 /* common */
@@ -155,7 +155,7 @@ body {
     height: 13px;
     margin-right: 5px;
 
-    background-image: url("/img/header_login_icon.svg");
+    background-image: url("img/header_login_icon.svg");
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -323,16 +323,16 @@ body {
 }
 
 .section-hero__img-1 {
-    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("/img/hero1.png");
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("img/hero1.png");
 }
 
 .section-hero__img-2 {
-    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("/img/hero2.png");
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("img/hero2.png");
 }
 
 .section-hero__img-3 {
     height: 100%;
-    background-image: url("/img/hero3.png");
+    background-image: url("img/hero3.png");
 }
 
 .section-hero .section-hero__item-heading__big {
@@ -434,7 +434,7 @@ body {
     width: 11px;
     height: 18px;
 
-    background-image: url("/img/section_hero_item_link.svg");
+    background-image: url("img/section_hero_item_link.svg");
     background-repeat: no-repeat;
 }
 
@@ -473,7 +473,7 @@ body {
     width: 11px;
     height: 18px;
 
-    background-image: url("/img/services/link.svg");
+    background-image: url("img/services/link.svg");
     background-repeat: no-repeat;
 }
 
@@ -525,19 +525,19 @@ body {
 }
 
 .section-services__img1 {
-    background-image: url("/img/services/1.png");
+    background-image: url("img/services/1.png");
 }
 
 .section-services__img2 {
-    background-image: url("/img/services/2.png");
+    background-image: url("img/services/2.png");
 }
 
 .section-services__img3 {
-    background-image: url("/img/services/3.png");
+    background-image: url("img/services/3.png");
 }
 
 .section-services__img4 {
-    background-image: url("/img/services/4.png");
+    background-image: url("img/services/4.png");
 }
 
 /* section benefits */
@@ -586,35 +586,35 @@ body {
 }
 
 .section-benefits__icon-bathtub {
-    background-image: url("/img/benefit-icons/bathtub.svg");
+    background-image: url("img/benefit-icons/bathtub.svg");
 }
 
 .section-benefits__icon-hanger {
-    background-image: url("/img/benefit-icons/hanger.svg");
+    background-image: url("img/benefit-icons/hanger.svg");
 }
 
 .section-benefits__icon-heating {
-    background-image: url("/img/benefit-icons/heating.svg");
+    background-image: url("img/benefit-icons/heating.svg");
 }
 
 .section-benefits__icon-hotel-key {
-    background-image: url("/img/benefit-icons/hotel-key.svg");
+    background-image: url("img/benefit-icons/hotel-key.svg");
 }
 
 .section-benefits__icon-parking {
-    background-image: url("/img/benefit-icons/parking.svg");
+    background-image: url("img/benefit-icons/parking.svg");
 }
 
 .section-benefits__icon-reception {
-    background-image: url("/img/benefit-icons/reception.svg");
+    background-image: url("img/benefit-icons/reception.svg");
 }
 
 .section-benefits__icon-security-box {
-    background-image: url("/img/benefit-icons/security-box.svg");
+    background-image: url("img/benefit-icons/security-box.svg");
 }
 
 .section-benefits__icon-swimming-pool {
-    background-image: url("/img/benefit-icons/swimming-pool.svg");
+    background-image: url("img/benefit-icons/swimming-pool.svg");
 }
 
 /* placing section */
@@ -744,7 +744,7 @@ body {
     border-radius: 15px;
     background-color: white;
 
-    background-image: url("/img/placing/placing_more.png");
+    background-image: url("img/placing/placing_more.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
@@ -791,7 +791,7 @@ body {
     width: 10px;
     height: 18px;
 
-    background-image: url("/img/placing/link.svg");
+    background-image: url("img/placing/link.svg");
     background-repeat: no-repeat;
 }
 
@@ -953,7 +953,7 @@ body {
 
     background-color: #333333;
     border-radius: 15px;
-    background-image: url("/img/footer-logo.svg");
+    background-image: url("img/footer-logo.svg");
     background-repeat: no-repeat;
     background-position-x: 83%;
     background-position-y: bottom;
@@ -1044,23 +1044,23 @@ body {
 }
 
 .social-block__vk {
-    background-image: url("/img/social/vk.svg");
+    background-image: url("img/social/vk.svg");
 }
 
 .social-block__twitter {
-    background-image: url("/img/social/twitter.svg");
+    background-image: url("img/social/twitter.svg");
 }
 
 .social-block__owl {
-    background-image: url("/img/social/owl.svg");
+    background-image: url("img/social/owl.svg");
 }
 
 .social-block__facebook {
-    background-image: url("/img/social/facebook.svg");
+    background-image: url("img/social/facebook.svg");
 }
 
 .social-block__instagram {
-    background-image: url("/img/social/instagram.svg");
+    background-image: url("img/social/instagram.svg");
 }
 
 
